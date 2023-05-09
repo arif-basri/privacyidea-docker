@@ -10,7 +10,7 @@ RUN install_packages ca-certificates git supervisor gettext-base nginx tree
 # Create directories and user for PrivacyIdea and set ownership
 RUN mkdir -p /data/privacyidea/keys \
     /var/log/privacyidea \
-    /etc/privacyidea && \
+    /etc/privacyidea/scripts && \
     adduser --gecos "PrivacyIdea User" \
     --disabled-password \
     --home /home/privacyidea \
